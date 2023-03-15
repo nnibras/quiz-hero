@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Hero Blog</title>
+    <link rel="icon" href="images/ideas.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <button onclick="window.location.href = 'index.html'"
+                class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Website
+            </button>
+        </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+
+    <main>
+        <div class="w-3/4 mx-auto  my-10 text-center">
+            <div class="text-3xl font-bold my-5 text-center">
+                <h1>Question & Answer</h1>
+            </div>
+            <div class="my-2">
+                <h2 class="text-xl font-semibold text-center">Question 1</h2>
+                <p class="text-center font-bold">What is the difference between map, filter, foreach and find?</p>
+                <p class="text-justify flex justify-center">Ans: All of these are functions in JS that allow to carry
+                    out
+                    some sort of
+                    functional programming.
+                    <br>
+                    i- map transforms every element of an array or object and returns a new array or an object with the
+                    same length. <br>
+                    ii- filter returns a new array or an object with only the elements that meet the condition provided.
+                    <br> iii- foreach applies a function to every element of an array or object without returning
+                    anything. <br>
+                    iv- find returns the first element in an array or object that meets the given condition.
+                </p>
+            </div>
+
+            <div class=" my-2">
+                <h2 class="text-xl font-semibold text-center">Question 2</h2>
+                <p class="text-center font-bold">What is the difference between localStorage, sessionStorage and cookie?
+                </p>
+                <p class="text-justify flex justify-center">Ans: All of these are processes of storing data in browser
+                    itself. <br>
+                    i- localStorage is a storage mechanism that allows web applications to store
+                    key-value pairs in the
+                    browser. The data stored in localStorage stays in the browser even after the browser is closed or
+                    the user logs out of the website. <br>
+
+                    ii- sessionStorage is similar to localStorage, but the data stored in sessionStorage is lost when
+                    the user closes the browser or the tab containing the website. <br>
+
+                    iii- cookies are small text files that are stored on the client-side by the web server. Cookies
+                    store data that needs to stay across different visits to the website.
+                </p>
+            </div>
+
+            <div class="my-2">
+                <h2 class="text-xl font-semibold text-center">Question 3</h2>
+                <p class="text-center font-bold">What is event loop and how does it work?</p>
+                <p class="text-justify flex justify-center">Ans: The event loop is a mechanism in JavaScript that
+                    handles asynchronous operations. It keeps track
+                    of tasks that need to
+                    be executed and continuously checks if any of those tasks have completed, allowing the program to
+                    run efficiently
+                    without blocking the main thread. <br>
+
+                    When an asynchronous operation is called it is added to the
+                    event queue rather
+                    than being executed immediately.
+                    The event loop continuously checks the event queue to see if there are any tasks that have
+                    completed.
+                    When a task is completed, it is removed from the event queue and its corresponding callback function
+                    is executed.
+                    This process continues until there are no more tasks in the event queue, at which point the event
+                    loop stops until
+                    another task is added.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+        Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+
+
+</body>
+
+</html>
